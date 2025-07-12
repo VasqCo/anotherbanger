@@ -8,7 +8,7 @@ nav_group: People
 
 # LukePNG
 
-![Lukepng profile picture](/luke.png){: #luke-profile style="width:180px;"}
+![Lukepng profile picture]({{ '/luke.png' | relative_url }}){: #luke-profile style="width:180px;"}
 
 It is kme luikepng
 

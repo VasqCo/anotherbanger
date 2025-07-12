@@ -1,8 +1,8 @@
 <header style="background-color: var(--header-bg, #0c0c0c); color: #fff; padding: 0; text-align: left; position: fixed; top: 0; left: 0; width: 100%; margin: 0; z-index: 1000;">
   <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px;">
     <h2 style="color: #fff; margin: 0; display: flex; align-items: center; gap: 12px; font-size: 1.5em;">
-      <img src="/favicon.png" alt="favicon" style="width: 40px; height: 40px; vertical-align: middle; display: inline-block; margin-right: 8px;" />
-      <a href="/" class="site-title-link">{{ site.title }}</a>
+      <img src="{{ '/favicon.png' | relative_url }}" alt="favicon" style="width: 40px; height: 40px; vertical-align: middle; display: inline-block; margin-right: 8px;" />
+      <a href="{{ '/' | relative_url }}" class="site-title-link">{{ site.title }}</a>
     </h2>
     <nav class="main-nav">
       <input type="checkbox" id="nav-toggle" class="nav-toggle" style="display:none;">

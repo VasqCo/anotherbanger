@@ -10,7 +10,7 @@ nav_group: People
 
 <div id="matt-profile-placeholder" style="width:180px; height:180px; display:inline-block; vertical-align:top; visibility:hidden; position:absolute;"></div>
 <div style="position:relative; height:180px;">
-    <img src="/matt.png" alt="Mattpng Profile Picture" id="matt-profile" class="slide-left" style="width:180px; height:180px; position:absolute; left:0; top:0; z-index:1; user-select:none;" draggable="false" />
+    <img src="{{ '/matt.png' | relative_url }}" alt="Mattpng Profile Picture" id="matt-profile" class="slide-left" style="width:180px; height:180px; position:absolute; left:0; top:0; z-index:1; user-select:none;" draggable="false" />
 </div>
 
 Hello. This is he! Mattpng!
@@ -30,19 +30,19 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 ### Games
 
-{% include music.html file="/music/K&B.mp3" caption="This song was written for Benry & Krimpst! It is the main theme that plays during the first major portion of the game." %}
+{% include music.html file="{{ '/Music/K&B.mp3' | relative_url }}" caption="This song was written for Benry & Krimpst! It is the main theme that plays during the first major portion of the game." %}
 
-{% include music.html file="/music/Super Cool Fighters.mp3" caption="This song was written for Super Cool Fighters! It is <em>also</em> the main theme that plays on the default stage I think." %}
+{% include music.html file="{{ '/Music/Super Cool Fighters.mp3' | relative_url }}" caption="This song was written for Super Cool Fighters! It is <em>also</em> the main theme that plays on the default stage I think." %}
 
-{% include music.html file="/music/Fun Gus the Fun Guy.mp3" caption="This song was written for The Tale of the Tortoise! Originally, at least. The boss that I wrote this song for \"Fun Gus,\" never ended up appearing in Tortoise, but did end up appearing in Benry & Krimpst! So I changed the style to fit that game and that's the version you're listening to now." %}
+{% include music.html file="{{ '/Music/Fun Gus the Fun Guy.mp3' | relative_url }}" caption="This song was written for The Tale of the Tortoise! Originally, at least. The boss that I wrote this song for \"Fun Gus,\" never ended up appearing in Tortoise, but did end up appearing in Benry & Krimpst! So I changed the style to fit that game and that's the version you're listening to now." %}
 
-{% include music.html file="/music/Character Theme.mp3" caption="This is a song from our upcoming game <a href=\"/threshold\">THRESHOLD</a>." %}
+{% include music.html file="{{ '/Music/Character Theme.mp3' | relative_url }}" caption="This is a song from our upcoming game <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>." %}
 
 ### Band
 
-{% include music.html file="/music/Dirty Egg.mp3" caption="This is a song off of my EP $5 Egg. It is pretty gnarly, if you ask me. Out of all the songs on that release this one seemed to be people's favorite." %}
+{% include music.html file="{{ '/Music/Dirty Egg.mp3' | relative_url }}" caption="This is a song off of my EP $5 Egg. It is pretty gnarly, if you ask me. Out of all the songs on that release this one seemed to be people's favorite." %}
 
-{% include music.html file="/music/Egg In Me.mp3" caption="While Dirty Egg was the fan favorite off that EP, this one is for sure mine." %}
+{% include music.html file="{{ '/Music/Egg In Me.mp3' | relative_url }}" caption="While Dirty Egg was the fan favorite off that EP, this one is for sure mine." %}
 
 If you want to support us we're Another Banger on streaming services but Vasq Co. Music on apple music for some reason. They won't let us change it.
 

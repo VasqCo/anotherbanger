@@ -3,11 +3,16 @@ let currentMeasure = 1;
 let sectionPlayCount = 0;
 let isPlaying = false;
 
+function getBaseUrl() {
+    return window.SITE_CONFIG && window.SITE_CONFIG.baseUrl ? window.SITE_CONFIG.baseUrl : '';
+}
+
 function playThresholdAudio() {
     if (isPlaying) return;
     
-    const logo = document.querySelector('img[src="/threshold artwork.png"]');
-    const audioPath = `/Music/threshold loops/s${currentSection}m${currentMeasure}.mp3`;
+    const baseUrl = getBaseUrl();
+    const logo = document.querySelector('img[src*="threshold artwork.png"]');
+    const audioPath = `${baseUrl}/Music/threshold loops/s${currentSection}m${currentMeasure}.mp3`;
     const audio = new Audio(audioPath);
     
     isPlaying = true;
@@ -32,7 +37,7 @@ function playThresholdAudio() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const logo = document.querySelector('img[src="/threshold artwork.png"]');
+    const logo = document.querySelector('img[src*="threshold artwork.png"]');
     if (logo) {
         logo.addEventListener('click', playThresholdAudio);
     }
