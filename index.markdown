@@ -7,14 +7,14 @@ title: Another Banger Dot Net
 
 Another Banger are two pngs who like to write music and make games! Click one of the links down below to learn more about us!
 
-* [Matt .png](mattpng)
-* [Luke .png](lukepng)
+* [Matt .png]({{ '/mattpng/' | relative_url }})
+* [Luke .png]({{ '/lukepng/' | relative_url }})
 
 Here are some of the games we've made together:
 
-* [THRESHOLD (UPCOMING)](threshold)
-* [Benry & Krimpst](benryandkrimpst)
-* [HOBO HORROR 2](hobohorror2)
+* [THRESHOLD (UPCOMING)]({{ '/threshold/' | relative_url }})
+* [Benry & Krimpst]({{ '/benryandkrimpst/' | relative_url }})
+* [HOBO HORROR 2]({{ '/hobohorror2/' | relative_url }})
 * <span style="font-family: 'Dancing Script', cursive; font-weight:700;">more pages coming in the future... maybe...</span>
 
 We also have an amazing <span style="font-family: IMPACT, serif;" class="wave">SOCIAL MEDIA PRESENCE!</span>
