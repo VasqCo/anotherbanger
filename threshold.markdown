@@ -6,12 +6,6 @@ nav_order: 1
 nav_group: Games
 ---
 
-<style>
-img[src*="threshold artwork.png"] {
-    filter: brightness(0) invert(1);
-}
-</style>
-
 <script>
 // Pass Jekyll variables to JavaScript
 window.SITE_CONFIG = {
