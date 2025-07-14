@@ -15,7 +15,7 @@ Here are some of the games we've made together:
 * [THRESHOLD (UPCOMING)]({{ '/threshold/' | relative_url }})
 * [Benry & Krimpst]({{ '/benryandkrimpst/' | relative_url }})
 * [HOBO HORROR 2]({{ '/hobohorror2/' | relative_url }})
-* <span style="font-family: 'Dancing Script', cursive; font-weight:700;">More pages coming in the future... maybe...</span>
+* <span style="font-family: 'Dancing Script', cursive; font-weight:700;">more pages coming in the future... maybe...</span>
 
 We also have an amazing <span style="font-family: 'Anton', 'Impact', serif;" class="wave">SOCIAL MEDIA PRESENCE!</span>
 
