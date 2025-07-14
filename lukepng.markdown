@@ -12,12 +12,12 @@ nav_group: People
 
 It is kme luikepng
 
-I am a writer, composer, artist, and DEVELOPER PROGRAMMER for <span class="shake" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">ANOTHER BANGER!</span>
+I am a writer, composer, artist, and DEVELOPER PROGRAMMER for <span class="shake" style="font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-weight: 700;">ANOTHER BANGER!</span>
 Look at that text go
 
 I have created MANY a game... including,,, Super cool... fighters... benry and krimpst....... and hgobo horror 2.... and am even working on <span style="background-color: white; color: white; padding: 2px 20px;">REDACTED</span>
 
-I am part of your least favorite band's least favorite band: <span class="shake" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">ANOTHER BANGER!</span>
+I am part of your least favorite band's least favorite band: <span class="shake" style="font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-weight: 700;">ANOTHER BANGER!</span>
 
 ## EXAMPLES!!!
 

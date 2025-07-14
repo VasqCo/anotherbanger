@@ -17,7 +17,7 @@ Here are some of the games we've made together:
 * [HOBO HORROR 2]({{ '/hobohorror2/' | relative_url }})
 * <span style="font-family: 'Dancing Script', cursive; font-weight:700;">more pages coming in the future... maybe...</span>
 
-We also have an amazing <span style="font-family: IMPACT, serif;" class="wave">SOCIAL MEDIA PRESENCE!</span>
+We also have an amazing <span style="font-family: 'Anton', 'Impact', serif;" class="wave">SOCIAL MEDIA PRESENCE!</span>
 
 * [Another Banger Twitter](https://x.com/_anotherbanger_)
 * [Another Banger Youtube](https://www.youtube.com/@Another_Banger)
