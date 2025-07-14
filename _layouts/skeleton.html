@@ -24,12 +24,20 @@
             image-rendering: pixelated;
             image-rendering: -moz-crisp-edges;
             image-rendering: crisp-edges;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                margin: 10px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <script>
-    // Pass Jekyll variables to JavaScript
     window.SITE_CONFIG = {
         baseUrl: '{{ site.baseurl }}'
     };

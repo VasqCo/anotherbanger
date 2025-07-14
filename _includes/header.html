@@ -1,10 +1,10 @@
 <header style="background-color: var(--header-bg, #0c0c0c); color: #fff; padding: 0; text-align: left; position: fixed; top: 0; left: 0; width: 100%; margin: 0; z-index: 1000;">
   <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px;">
-    <h2 style="color: #fff; margin: 0; display: flex; align-items: center; gap: 12px; font-size: 1.5em;">
-      <img src="{{ '/favicon.png' | relative_url }}" alt="favicon" style="width: 40px; height: 40px; vertical-align: middle; display: inline-block; margin-right: 8px;" />
+    <h2 class="header-title">
+      <img src="{{ '/favicon.png' | relative_url }}" alt="favicon" style="width: 40px; height: 40px; vertical-align: middle; display: inline-block; margin-right: 8px; flex-shrink: 0;" />
       <a href="{{ '/' | relative_url }}" class="site-title-link">{{ site.title }}</a>
     </h2>
-    <nav class="main-nav">
+    <nav class="main-nav" style="flex-shrink: 0;">
       <input type="checkbox" id="nav-toggle" class="nav-toggle" style="display:none;">
       <label for="nav-toggle" class="nav-toggle-label" style="display:none; color:#fff; background:none; border:none; padding:8px 16px; cursor:pointer; font-size:1em; border-radius: 6px; transition: all 0.3s ease;">≡ Menu</label>
       <ul class="nav-list" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; align-items: center;">
@@ -22,10 +22,27 @@
   :root {
     --header-bg: #0c0c0c;
   }
+  .header-title {
+    color: #fff !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-size: 1.5em !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+    overflow: hidden !important;
+    text-shadow: none !important;
+  }
   .site-title-link {
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
   }
   .site-title-link:hover {
     text-decoration: underline;

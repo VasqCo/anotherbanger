@@ -126,17 +126,35 @@
     }
     setRandomTreasurePosition();
     document.body.appendChild(treasure);
+    
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+        treasure.style.opacity = '0.3';
+        
+        treasure.style.animation = 'treasurePulse 2s infinite';
+        var style = document.createElement('style');
+        style.textContent = `
+            @keyframes treasurePulse {
+                0%, 100% { opacity: 0.3; transform: scale(1); }
+                50% { opacity: 0.6; transform: scale(1.1); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
     treasure.addEventListener('mouseenter', function() {
         if (!treasureFound) {
             treasure.style.opacity = '1.0';
         }
     });
     treasure.addEventListener('mouseleave', function() {
-        if (!treasureFound) {
+        if (!treasureFound && !isMobile) {
             treasure.style.opacity = '0';
         }
     });
-    treasure.addEventListener('click', function() {
+    
+    function findTreasure() {
         if (!treasureFound) {
             treasureFound = true;
             score += 1000000;
@@ -162,8 +180,14 @@
                 }, 2000);
             }, 3000);
         }
+    }
+    
+    treasure.addEventListener('click', findTreasure);
+    treasure.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        findTreasure();
     });
-    img.addEventListener('click', function() {
+    function activateGame() {
         if (!animationDone || activated) return;
         activated = true;
         img.classList.remove('slide-left');
@@ -182,6 +206,12 @@
         treasure.style.display = 'block';
         setRandomTreasurePosition();
         startPhysics();
+    }
+    
+    img.addEventListener('click', activateGame);
+    img.addEventListener('touchend', function(e) {
+        e.preventDefault();
+        activateGame();
     });
     function checkCollision() {
         var imgRect = img.getBoundingClientRect();
@@ -227,39 +257,73 @@
         }
         rafId = requestAnimationFrame(step);
     }
-    img.addEventListener('mousedown', function(e) {
+    function startDrag(clientX, clientY) {
         if (!activated) return;
         dragging = true;
         img.style.cursor = 'grabbing';
         window.getSelection().removeAllRanges();
-        offset.x = e.clientX - parseFloat(img.style.left);
-        offset.y = e.clientY - parseFloat(img.style.top);
-        lastMouse.x = e.clientX;
-        lastMouse.y = e.clientY;
+        offset.x = clientX - parseFloat(img.style.left);
+        offset.y = clientY - parseFloat(img.style.top);
+        lastMouse.x = clientX;
+        lastMouse.y = clientY;
+    }
+
+    img.addEventListener('mousedown', function(e) {
+        startDrag(e.clientX, e.clientY);
         document.addEventListener('mousemove', onMove);
         document.addEventListener('mouseup', onUp);
     });
+
+    img.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        var touch = e.touches[0];
+        startDrag(touch.clientX, touch.clientY);
+        document.addEventListener('touchmove', onTouchMove, { passive: false });
+        document.addEventListener('touchend', onTouchEnd);
+    });
     img.addEventListener('dragstart', function(e) { e.preventDefault(); });
-    function onMove(e) {
+
+    function updatePosition(clientX, clientY) {
         if (!dragging) return;
-        var newLeft = e.clientX - offset.x;
-        var newTop = e.clientY - offset.y;
-        velocity.x = e.clientX - lastMouse.x;
-        velocity.y = e.clientY - lastMouse.y;
+        var newLeft = clientX - offset.x;
+        var newTop = clientY - offset.y;
+        velocity.x = clientX - lastMouse.x;
+        velocity.y = clientY - lastMouse.y;
         img.style.left = newLeft + 'px';
         img.style.top = newTop + 'px';
-        lastMouse.x = e.clientX;
-        lastMouse.y = e.clientY;
+        lastMouse.x = clientX;
+        lastMouse.y = clientY;
         if (!dragging) {
             rotation += velocity.x;
             img.style.transform = 'rotate(' + rotation + 'deg)';
         }
     }
-    function onUp(e) {
-        if (e.button !== 0) return; 
+
+    function onMove(e) {
+        updatePosition(e.clientX, e.clientY);
+    }
+
+    function onTouchMove(e) {
+        e.preventDefault();
+        var touch = e.touches[0];
+        updatePosition(touch.clientX, touch.clientY);
+    }
+    function endDrag(e) {
+        if (e && e.button !== undefined && e.button !== 0) return; 
         dragging = false;
         img.style.cursor = 'grab';
         document.removeEventListener('mousemove', onMove);
         document.removeEventListener('mouseup', onUp);
+        document.removeEventListener('touchmove', onTouchMove);
+        document.removeEventListener('touchend', onTouchEnd);
+    }
+
+    function onUp(e) {
+        endDrag(e);
+    }
+
+    function onTouchEnd(e) {
+        e.preventDefault();
+        endDrag();
     }
 })();

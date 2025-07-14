@@ -7,7 +7,6 @@ nav_group: Games
 ---
 
 <script>
-// Pass Jekyll variables to JavaScript
 window.SITE_CONFIG = {
     baseUrl: '{{ site.baseurl }}'
 };
