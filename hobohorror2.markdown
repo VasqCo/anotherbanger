@@ -10,8 +10,8 @@ nav_group: Games
 
 Have you ever seen a homeless person on the side of the road and thought to yourself any of the following?:
 
-1. Gosh dang! That thang is SCARY!
-2. Gosh dang! I want to DESTROY that thang!
+1. Gosh dang! That thing is SCARY!
+2. Gosh dang! I want to DESTROY that thing!
 
 Then you'll probably hate this game, because they scare you and you can't kill them.
 
