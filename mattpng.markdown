@@ -6,7 +6,7 @@ nav_order: 10
 nav_group: People
 ---
 
-# Mattpng
+# <span style="font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive; font-weight: bold;">Mattpng</span>
 
 <div id="matt-profile-placeholder" style="width:180px; height:180px; display:inline-block; vertical-align:top; visibility:hidden; position:absolute;"></div>
 <div style="position:relative; height:180px;">
@@ -15,14 +15,14 @@ nav_group: People
 
 Hello. This is he! Mattpng!
 
-I am a composer and writer for <span class="wave" style="font-family: cursive;">ANOTHER BANGER!</span>
+I am a composer and writer for <span class="wave" style="font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive; font-weight: bold;">ANOTHER BANGER!</span>
  Impressed? No? 
 
 ...
 
 I have created many awesome characters and written music for our games such as [THRESHOLD](threshold), Benry & Krimpst, Super Cool Fighters, HOBO HORROR 2 (we don't talk about the first one), and other ones too that we never finished!
 
-I am also in a band with Luke called <span class="wave" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">ANOTHER BANGER!</span>
+I am also in a band with Luke called <span class="wave" style="font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive; font-weight: bold;">ANOTHER BANGER!</span>
 
 (I also made the website you're visiting.)
 

@@ -1,17 +1,17 @@
 ---
 title: HOBO HORROR 2
-layout: page
+layout: hh2
 permalink: /hobohorror2/
 nav_order: 3
 nav_group: Games
 ---
 
-# HOBO HORROR 2
+# <span style="font-family: 'VCR OSD Mono'; font-size: 2em;">HOBO HORROR 2</span>
 
 Have you ever seen a homeless person on the side of the road and thought to yourself any of the following?:
 
-1. Gosh dang! That thing is SCARY!
-2. Gosh dang! I want to DESTROY that thing!
+1. Gosh dang! That thang is SCARY!
+2. Gosh dang! I want to DESTROY that thang!
 
 Then you'll probably hate this game, because they scare you and you can't kill them.
 

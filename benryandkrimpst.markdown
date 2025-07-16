@@ -1,16 +1,16 @@
 ---
 title: Benry & Krimpst
-layout: page
+layout: bak
 permalink: benryandkrimpst
 nav_order: 2
 nav_group: Games
 ---
 
-# Benry & Krimpst
+# <span style="font-family: 'DePixel', 'Comic Sans MS', cursive;">Benry & Krimpst</span>
 
 ![Benry & Krimpst](https://img.itch.zone/aW1nLzE3NDE0MDU3LnBuZw==/315x250%23c/%2FyL5eG.png)
 
-A classic setup, you see. A big guy and a smol guy. They are two brothers. One is a cripple, however. Use this to your advantage somehow.
+In a world where two brothers... they, uh, travel through space—not time, actually, just space; to find a new planet away from their old planet, Benry and Krimpst go to another planet called... Grand... Marlin, and they have loads of fun doing it... too.
 
 ## PLOT?: YES!!!
 
@@ -30,6 +30,6 @@ Benry & Krimpst both nod in agreement. They know what they have to do.
 
 ---
 
-Now, is any of this exposition actually in the game? No, it's not. Luke was too lazy. Every bad thing that's ever happened to me was Luke's fault. But fear not! Because it's right here! On this website that looks like a sheet of paper.
+Now, is any of this exposition actually in the game? No, it's not. Luke was too lazy. Every bad thing that's ever happened to me was Luke's fault. But fear not! Because it's right here! On this website that looks like a <span style="background-color: white; color: white; padding: 2px 20px;">REDACTED</span>.
 
 If anything about this game intrigues or tickles your brain-nerves then click right [here](https://another-banger.itch.io/benry-y-krimpst) to play!
