@@ -38,6 +38,8 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 {% include music.html file="/Music/Character Theme.mp3" caption="This is a song from our upcoming game <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>." %}
 
+{% include music.html file="/Music/Rude Bus.mp3" caption="This song was once an idea for <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>, but will now go to waste." %}
+
 ### Band
 
 {% include music.html file="/Music/Dirty Egg.mp3" caption="This is a song off of my EP $5 Egg. It is pretty gnarly, if you ask me. Out of all the songs on that release this one seemed to be people's favorite." %}
