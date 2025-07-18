@@ -1,7 +1,7 @@
 ---
 title: Benry & Krimpst
 layout: bak
-permalink: benryandkrimpst
+permalink: /benryandkrimpst/
 nav_order: 2
 nav_group: Games
 ---
