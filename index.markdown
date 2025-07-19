@@ -22,11 +22,12 @@ We also have an amazing <span style="font-family: 'Anton', 'Impact', serif;" cla
 * [Another Banger Twitter](https://x.com/_anotherbanger_)
 * [Another Banger Youtube](https://www.youtube.com/@Another_Banger)
 * [Another Banger Spotify](https://open.spotify.com/artist/0Cjt6ZaCFssn5Wl40zWjll)
-* [Another Banger Itch.io](https://another-banger.itch.io/)
 * [Vasq Co. Youtube (Old Channel)](https://www.youtube.com/@vasqco.351)
 * [Matt .png Bluesky](https://bsky.app/profile/vasqco.com)
 * [Luke .png Bluesky](https://bsky.app/profile/lukepng.bsky.social)
 
+If you're interested in checking out any of our games, look through our [itch.io](https://another-banger.itch.io/) page to play them, either in your browser or as a Windows executable!
+
 Thank you for taking the time to look through our website! Enjoy your stay. We'd offer you complimentary coffee or a mint, but our budget was blown on the stylized text.
 
-If you have any questions or inquiries of any kind, email Matt at mattpng@anotherbanger.net, or Luke at lukepng@anotherbanger.net.
+If you have any questions or inquiries, email Matt at mattpng@anotherbanger.net or Luke at lukepng@anotherbanger.net
