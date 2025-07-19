@@ -14,8 +14,20 @@ function playThresholdAudio() {
     const audioPath = `${baseUrl}/Music/${musicFolder}/s${currentSection}m${currentMeasure}.mp3`;
     console.log('Playing audio:', audioPath);
     const audio = new Audio(audioPath);
+    
+    audio.preload = 'auto';
+    audio.volume = 1.0;
+    
     isPlaying = true;
-    audio.play().catch(e => console.log('Audio play failed:', e, audioPath));
+    
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(e => {
+            console.log('Audio play failed:', e, audioPath);
+            isPlaying = false;
+        });
+    }
+    
     audio.onended = () => {
         isPlaying = false;
         currentMeasure++;
@@ -41,7 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (logo) {
         console.log('Logo src:', logo.src);
         logo.addEventListener('click', playThresholdAudio);
+        logo.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            playThresholdAudio();
+        });
         logo.style.cursor = 'pointer';
+        logo.style.userSelect = 'none';
+        logo.style.webkitUserSelect = 'none';
+        logo.style.webkitTouchCallout = 'none';
     } else {
         console.log('Logo not found. Available images:', document.querySelectorAll('img'));
     }
