@@ -9,36 +9,40 @@ function getBaseUrl() {
 
 function playThresholdAudio() {
     if (isPlaying) return;
-    
     const baseUrl = getBaseUrl();
-    const logo = document.querySelector('img[src*="threshold artwork.png"]');
-    const audioPath = `${baseUrl}/Music/threshold loops/s${currentSection}m${currentMeasure}.mp3`;
+    const musicFolder = 'threshold loops';
+    const audioPath = `${baseUrl}/Music/${musicFolder}/s${currentSection}m${currentMeasure}.mp3`;
+    console.log('Playing audio:', audioPath);
     const audio = new Audio(audioPath);
-    
     isPlaying = true;
-    
-    audio.play().catch(e => console.log('Audio play failed:', e));
-    
+    audio.play().catch(e => console.log('Audio play failed:', e, audioPath));
     audio.onended = () => {
         isPlaying = false;
-        
         currentMeasure++;
-        
+        console.log('Audio ended, next will be: section', currentSection, 'measure', currentMeasure);
         if (currentMeasure > 4) {
             currentMeasure = 1;
             sectionPlayCount++;
-            
             if (sectionPlayCount >= 2) {
                 sectionPlayCount = 0;
                 currentSection = currentSection === 1 ? 2 : 1;
+                console.log('Switched to section', currentSection);
             }
         }
     };
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const logo = document.querySelector('img[src*="threshold artwork.png"]');
+    const logo = document.querySelector('img[src*="threshold artwork.png"]') || 
+                 document.querySelector('img[src*="threshold%20artwork.png"]') ||
+                 document.querySelector('img[alt="THRESHOLD"]');
+    
+    console.log('Threshold script loaded, logo found:', !!logo);
     if (logo) {
+        console.log('Logo src:', logo.src);
         logo.addEventListener('click', playThresholdAudio);
+        logo.style.cursor = 'pointer';
+    } else {
+        console.log('Logo not found. Available images:', document.querySelectorAll('img'));
     }
 });
