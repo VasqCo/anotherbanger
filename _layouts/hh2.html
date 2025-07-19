@@ -27,27 +27,17 @@ layout: "page"
         border-bottom: 2px solid #ffffff;
         box-shadow: 0 2px 12px rgba(255, 255, 255, 0.667);
     }
-    .video-responsive {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 25px;
-      height: 0;
-    }
-    .video-responsive iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      max-width: 100vw;
+    @media (max-width: 560px) {
+      .hh2-video-responsive {
+        max-width: 100%;
+        overflow: hidden;
+      }
+      .hh2-video-responsive iframe {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+      }
     }
 </style>
 
 {{ content }}
-
-{% assign video_url = page.video_url | default: nil %}
-{% if video_url %}
-  <div class="video-responsive">
-    <iframe width="560" height="315" src="{{ video_url }}" title="Video" frameborder="0" allowfullscreen style="margin: 24px 0;"></iframe>
-  </div>
-{% endif %}

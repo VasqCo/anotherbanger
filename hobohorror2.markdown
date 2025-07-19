@@ -19,7 +19,9 @@ Then you'll probably hate this game, because they scare you and you can't kill t
 
 You are a contractor for a company called... god we made this game so long ago I don't remember. Anyway, your job is to... crank a generator in a sewer... and also close the sewer drain for some reason... and... fix an elevator... Dude wtf were you hired for?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VHZdeXVLcrw" title="Hobo Horror 2 Trailer" frameborder="0" allowfullscreen style="margin: 24px 0;"></iframe>
+<div class="hh2-video-responsive">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VHZdeXVLcrw" title="Hobo Horror 2 Trailer" frameborder="0" allowfullscreen style="display:block;margin:24px 0;"></iframe>
+</div>
 If you're interested, watch the above trailer! Or visit the [itch.io](https://another-banger.itch.io/hobo-horror-2) page to play it in the browser or download it for windows!
 
 <span style="font-family: 'Dancing Script', cursive; font-weight:700;">*ignore the old logo and channel this game is old as hell*</span>
