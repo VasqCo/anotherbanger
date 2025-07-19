@@ -3,7 +3,7 @@
     var activated = false;
     var animationDone = false;
     var velocity = { x: 0, y: 0 };
-    var gravity = 0.7;
+    var gravity = 1; // Increased gravity for faster acceleration
     var bounce = 0.7;
     var friction = 0.85;
     var dragging = false;
@@ -231,13 +231,16 @@
         }
     }
     function startPhysics() {
-        function step() {
+        var lastTime = performance.now();
+        function step(now) {
+            var dt = (now - lastTime) / 1000; // seconds
+            lastTime = now;
             if (!dragging) {
-                velocity.y += gravity;
+                velocity.y += gravity * dt * 120; // Increased multiplier for faster physics
                 var left = parseFloat(img.style.left);
                 var top = parseFloat(img.style.top);
-                left += velocity.x;
-                top += velocity.y;
+                left += velocity.x * dt * 120;
+                top += velocity.y * dt * 120;
                 if (left < 0) { left = 0; velocity.x *= -bounce; }
                 if (left + img.width > window.innerWidth) { left = window.innerWidth - img.width; velocity.x *= -bounce; }
                 if (top < 0) { top = 0; velocity.y *= -bounce; }
@@ -247,7 +250,7 @@
                     velocity.x *= friction;
                     if (Math.abs(velocity.y) < 1) velocity.y = 0;
                 }
-                rotation += velocity.x;
+                rotation += velocity.x * dt * 120;
                 img.style.transform = 'rotate(' + rotation + 'deg)';
                 img.style.left = left + 'px';
                 img.style.top = top + 'px';
