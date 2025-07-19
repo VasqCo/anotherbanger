@@ -48,5 +48,29 @@
     {{ content }}
     <script src="{{ '/scripts/wave.js' | relative_url }}"></script>
     <script src="{{ '/scripts/shake.js' | relative_url }}"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var host = window.location.host;
+        document.querySelectorAll('a').forEach(function(link) {
+          var href = link.getAttribute('href');
+          if (href && !href.startsWith('#') && !href.startsWith('mailto:')) {
+            var isExternal = false;
+            try {
+              var url = new URL(href, window.location.origin);
+              isExternal = url.host !== host;
+            } catch (e) {
+              isExternal = false;
+            }
+            if (isExternal) {
+              link.setAttribute('target', '_blank');
+              link.setAttribute('rel', 'noopener');
+            } else {
+              link.removeAttribute('target');
+              link.removeAttribute('rel');
+            }
+          }
+        });
+      });
+    </script>
 </body>
 </html>
