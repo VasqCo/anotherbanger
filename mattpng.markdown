@@ -13,7 +13,7 @@ nav_group: People
     <img src="{{ '/matt.png' | relative_url }}" alt="Mattpng Profile Picture" id="matt-profile" class="slide-left" style="width:180px; height:180px; position:absolute; left:0; top:0; z-index:1; user-select:none;" draggable="false" />
 </div>
 
-Hello. This is me, Mattpng!
+Hello. This is he! Mattpng!
 
 I am a composer and writer for <span class="wave" style="font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive; font-weight: bold;">ANOTHER BANGER!</span>
 Impressed? No? 

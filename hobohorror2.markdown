@@ -13,7 +13,7 @@ Have you ever seen a homeless person on the side of the road and thought to your
 1. Gosh dang! That thang is SCARY!
 2. Gosh dang! I want to DESTROY that thang!
 
-Then you'll probably hate this game, because they scare you and you can't defeat them.
+Then you'll probably hate this game, because they scare you and you can't kill them.
 
 ## PLOT?: <span style="font-family: 'Dancing Script', cursive; font-weight:700;">*barely*</span>
 
@@ -24,4 +24,4 @@ You are a contractor for a company called... God, we made this game so long ago 
 </div>
 If you're interested, watch the above trailer! Or visit the [itch.io](https://another-banger.itch.io/hobo-horror-2) page to play it in the browser or download it for Windows!
 
-<span style="font-family: 'Dancing Script', cursive; font-weight:700;">*Ignore the old logo and channel; this game is old as hell.*</span>
+<span style="font-family: 'Dancing Script', cursive; font-weight:700;">*ignore the old logo and channel this game is old as hell*</span>
