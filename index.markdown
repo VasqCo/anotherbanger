@@ -2,11 +2,9 @@
 layout: home
 title: Another Banger Dot Net
 ---
-
-# NEW GAME ALERT!!!
-
-<div style="background: rgb(153,77,0); padding: 2em 0 1.5em 0; border-radius: 0; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+<div style="background: rgb(153,77,0); padding: 2em 0 1.5em 0; border-radius: 0; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-top: -2em; z-index: 1;">
   <div style="max-width: 900px; margin: 0 auto; padding: 0 2em;">
+    <h1 style="color:#ffe7b3">NEW GAME ALERT!!!</h1>
     <h2><a href="https://another-banger.itch.io/i-love-loop" style="color:#ffe7b3; text-decoration:underline;">I LOVE LOOP!</a></h2>
     <div>
       <img src="https://img.itch.zone/aW1hZ2UvMzc3ODA2OC8yMjQ4MjIwNi5wbmc=/347x500/zhrmH4.png" width="150" style="display:inline-block; margin-right:10px;"/>
