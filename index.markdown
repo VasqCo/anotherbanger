@@ -17,7 +17,7 @@ Here are some of the games we've made together:
 * [HOBO HORROR 2]({{ '/hobohorror2/' | relative_url }})
 * <span style="font-family: 'Dancing Script', cursive; font-weight:700;">more pages coming in the future... maybe...</span>
 
-We're preparing to release our fourth album, "The Diary / Journal of Deranged Psychopaths". It releases September 8th on all music streaming services, assuming that all goes to plan! Which it might not. I'm testing out a new music distrabution service and honestly I don't have a lot of faith. I'm scared.
+We're preparing to release our fourth album, "The Diary / Journal of Deranged Psychopaths". It releases September 8th on all music streaming services, assuming that all goes to plan! Which it might not. I'm testing out a new music distribution service, and honestly, I don't have a lot of faith. Frankly, I'm scared.
 
 ![The Diary / Journal of Deranged Psychopaths album cover](Sebastian.png)
 
