@@ -5,7 +5,7 @@ permalink: /band/
 nav_order: 0
 ---
 
-# Another Banger has great songs.
+# Another Banger has <span class=shake>great</span> songs.
 
 Another Banger is a musical duo/band best known for creating the god-awful "British Rap" (don't listen to it), and also "Liar," which has obtained almost 10,000 views on YouTube. That's more views than there are people!
 
