@@ -12,10 +12,12 @@ Another Banger is a duo of two PNGs who like to write music and make games! Clic
 
 Here are some of the games we've made together:
 
-* [THRESHOLD (UPCOMING)]({{ '/threshold/' | relative_url }})
+* [THRESHOLD]({{ '/threshold/' | relative_url }}) (IN DEVELOPMENT)
 * [Benry & Krimpst]({{ '/benryandkrimpst/' | relative_url }})
 * [HOBO HORROR 2]({{ '/hobohorror2/' | relative_url }})
 * <span style="font-family: 'Dancing Script', cursive; font-weight:700;">more pages coming in the future... maybe...</span>
+
+If you want to learn about our sweet [BAND](band) please click [HERE!](/band/)
 
 We also have an amazing <span style="font-family: 'Anton', 'Impact', serif;" class="wave">SOCIAL MEDIA PRESENCE!</span>
 
