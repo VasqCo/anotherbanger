@@ -17,14 +17,14 @@ Here are some of the games we've made together:
 * [HOBO HORROR 2]({{ '/hobohorror2/' | relative_url }})
 * <span style="font-family: 'Dancing Script', cursive; font-weight:700;">more pages coming in the future... maybe...</span>
 
-If you want to learn about our sweet [BAND](band) please click [HERE!](/band/)
+If you want to learn about our sweet [BAND](band), please click [HERE!](/band/)
 
 We also have an amazing <span style="font-family: 'Anton', 'Impact', serif;" class="wave">SOCIAL MEDIA PRESENCE!</span>
 
 * [Another Banger Twitter](https://x.com/_anotherbanger_)
-* [Another Banger Youtube](https://www.youtube.com/@Another_Banger)
+* [Another Banger YouTube](https://www.youtube.com/@Another_Banger)
 * [Another Banger Spotify](https://open.spotify.com/artist/0Cjt6ZaCFssn5Wl40zWjll)
-* [Vasq Co. Youtube (Old Channel)](https://www.youtube.com/@vasqco.351)
+* [Vasq Co. YouTube (Old Channel)](https://www.youtube.com/@vasqco.351)
 * [Matt .png Bluesky](https://bsky.app/profile/vasqco.com)
 * [Luke .png Bluesky](https://bsky.app/profile/lukepng.bsky.social)
 

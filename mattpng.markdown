@@ -32,9 +32,9 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 {% include music.html file="/Music/K&B.mp3" caption="This song was written for Benry & Krimpst! It is the main theme that plays during the first major portion of the game." %}
 
-{% include music.html file="/Music/Super Cool Fighters.mp3" caption="This song was written for Super Cool Fighters! It is <em>also</em> the main theme that plays on the default stage I think." %}
+{% include music.html file="/Music/Super Cool Fighters.mp3" caption="This song was written for Super Cool Fighters! It is <em>also</em> the main theme that plays on the default stage, I think." %}
 
-{% include music.html file="/Music/Fun Gus the Fun Guy.mp3" caption="This song was written for The Tale of the Tortoise! Originally, at least. The boss that I wrote this song for \"Fun Gus,\" never ended up appearing in Tortoise, but did end up appearing in Benry & Krimpst! So I changed the style to fit that game and that's the version you're listening to now." %}
+{% include music.html file="/Music/Fun Gus the Fun Guy.mp3" caption="This song was written for The Tale of the Tortoise! Originally, at least. The boss that I wrote this song for, \"Fun Gus,\" never ended up appearing in Tortoise, but did end up appearing in Benry & Krimpst! So I changed the style to fit that game, and that's the version you're listening to now." %}
 
 {% include music.html file="/Music/Character Theme.mp3" caption="This is a song from our upcoming game <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>." %}
 
@@ -42,16 +42,16 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 ### Band
 
-{% include music.html file="/Music/Dirty Egg.mp3" caption="This is a song off of my EP $5 Egg. It is pretty gnarly, if you ask me. Out of all the songs on that release this one seemed to be people's favorite." %}
+{% include music.html file="/Music/Dirty Egg.mp3" caption="This is a song off of my EP $5 Egg. It is pretty gnarly, if you ask me. Out of all the songs on that release, this one seemed to be people's favorite." %}
 
 {% include music.html file="/Music/Egg In Me.mp3" caption="While Dirty Egg was the fan favorite off that EP, this one is for sure mine." %}
 
-If you want to support us we're Another Banger on streaming services but Vasq Co. Music on apple music for some reason. They won't let us change it.
+If you want to support us, we're Another Banger on streaming services but Vasq Co. Music on Apple Music for some reason (CORRECTION: OUR NEWEST ALBUM IS ON APPLE MUSIC UNDER THE NAME ANOTHER BANGER, BUT ONLY THAT ONE. ALL OTHER RELEASES ARE STILL UNDER VASQ CO. MUSIC). They won't let us change it.
 
 You can also check out my [YouTube channel](https://www.youtube.com/@mattpng.) for more examples of things I do!
 
 ## CONCLUSION!!!!
 
-I love writing and making songs and coding (sometimes) and doing all kinds of crazy creative shizz to excercize the mind juices. If you ever have that urge or that tickle or fuzzy feeling to make something, MAKE IT!!!! Even if it sucks, just make it. People say something can't come from nothing but literally everything comes from nothing. So those people are FOOLS!@!!
+I love writing and making songs and coding (sometimes) and doing all kinds of crazy creative shizz to exercise the mind juices. If you ever have that urge or that tickle or fuzzy feeling to make something, MAKE IT!!!! Even if it sucks, just make it. People say something can't come from nothing, but literally everything comes from nothing. So those people are FOOLS!@!!
 
-Yap over visit another page.
+Yap over, visit another page.

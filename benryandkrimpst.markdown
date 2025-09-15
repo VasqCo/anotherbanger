@@ -10,7 +10,7 @@ nav_group: Games
 
 ![Benry & Krimpst](https://img.itch.zone/aW1nLzE3NDE0MDU3LnBuZw==/315x250%23c/%2FyL5eG.png)
 
-In a world where two brothers... they, uh, travel through space—not time, actually, just space; to find a new planet away from their old planet, Benry and Krimpst go to another planet called... Grand... Marlin, and they have loads of fun doing it... too.
+In a world where two brothers... they, uh, travel through space—not time, actually, just space— to find a new planet away from their old planet, Benry and Krimpst go to another planet called... Grand... Marlin, and they have loads of fun doing it... too.
 
 ## PLOT?: YES!!!
 
@@ -22,7 +22,7 @@ Benry and Krimpst are very visibly annoyed, especially Krimpst.
 
 *"Got dang it, Jiminy! Always when I'm on vacation!"*
 
-Benry tries to calm him. *"Krimpst, he didn’t want the earth to be destroyed just as much as we don’t want to save it! Cut him some slack, why don'tcha?"*
+Benry tries to calm him. *"Krimpst, he didn’t want the Earth to be destroyed just as much as we don’t want to save it! Cut him some slack, why don'tcha?"*
 
 Jiminy continued, *"You know I love you boys, but by GAWD if you don’t do something, the human race will die with you! Go to the convenience store and buy a port-o-colony! Make your soon-to-be ancestors proud!"*
 
@@ -32,4 +32,4 @@ Benry & Krimpst both nod in agreement. They know what they have to do.
 
 Now, is any of this exposition actually in the game? No, it's not. Luke was too lazy. Every bad thing that's ever happened to me was Luke's fault. But fear not! Because it's right here! On this website that looks like a <span style="background-color: white; color: white; padding: 2px 20px;">REDACTED</span>.
 
-If anything about this game intrigues or tickles your brain-nerves then click right [here](https://another-banger.itch.io/benry-y-krimpst) to play!
+If anything about this game intrigues or tickles your brain-nerves, then click right [here](https://another-banger.itch.io/benry-y-krimpst) to play!
