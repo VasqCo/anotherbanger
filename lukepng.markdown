@@ -10,27 +10,24 @@ nav_group: People
 
 ![Lukepng profile picture]({{ '/luke.png' | relative_url }}){: #luke-profile style="width:180px;"}
 
-It is kme luikepng
+Hello! I am LUKEPNG!!! I'm credited as a programmer for all of our games but I actually never learned how to do that. I pay Matt to credit me as such as to be included. I also don't know how to write stories or write music either. I also pay him to credit me for some of his music. As to be included. Also my voice in all of my music is AI enhanced. My real singing voice is garbage and terrible. 🎉
 
-I am a writer, composer, artist, and DEVELOPER PROGRAMMER for <span class="shake" style="font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-weight: 700;">ANOTHER BANGER!</span>
-Look at that text go
+I also wasn't potty trained until a few days ago.
 
-I have created MANY a game... including,,, Super cool... fighters... benry and krimpst....... and hgobo horror 2.... and am even working on <span style="background-color: white; color: white; padding: 2px 20px;">REDACTED</span>
+## Games
 
-I am part of your least favorite band's least favorite band: <span class="shake" style="font-family: 'Comic Neue', 'Comic Sans MS', cursive; font-weight: 700;">ANOTHER BANGER!</span>
+- ***Threshold*** — I'm credited as the sole programmer for our upcoming game Threshold, but in reality it's all Matt. Idk how to do shi.
+- ***Benry & Krimspt*** — I didn't do notin'
+- ***All other projects*** — Nothing
 
-## EXAMPLES!!!
+## Music
 
-### Games
+- Nothing......
 
-mattttt put some games
+## In conclusion.
 
-### Band
+I am a stupid lazy guy who has no talent or anything even, and couldn't even write my own bio page!! That's right, Matt wrote this whole thing!!!
 
-mattttt put some of mys music
+...It's still all true though.
 
-## CONCLUSION!!!!
-
-Even if my stuff takes one thousand years to make it usually happens yay. Never gice up...
-
-<span style="color: #ff4444; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;">leave my page.</span>
+<span style="color: #ff4444; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;">Leave this page.</span>
