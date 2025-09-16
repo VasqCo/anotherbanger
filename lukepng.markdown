@@ -10,24 +10,38 @@ nav_group: People
 
 ![Lukepng profile picture]({{ '/luke.png' | relative_url }}){: #luke-profile style="width:180px;"}
 
-Hello! I am LUKEPNG!!! I'm credited as a programmer for all of our games but I actually never learned how to do that. I pay Matt to credit me as such as to be included. I also don't know how to write stories or write music either. I also pay him to credit me for some of his music. As to be included. Also my voice in all of my music is AI enhanced. My real singing voice is garbage and terrible. 🎉
+Hello! This is Matt. I will be writing about Luke for him because he didn't want to do it. He's too busy playing Minecraft or something.
 
-I also wasn't potty trained until a few days ago.
+Luke is the head (and sole) programmer for Another Banger! He is additionally the sole artist, as well as a co-writer and co-composer.
 
 ## Games
 
-- ***Threshold*** — I'm credited as the sole programmer for our upcoming game Threshold, but in reality it's all Matt. Idk how to do shi.
-- ***Benry & Krimspt*** — I didn't do notin'
-- ***All other projects*** — Nothing
+Luke has made many games, including, but not limited to:
+
+- ***[I Love Loop](https://another-banger.itch.io/i-love-loop)*** — Creature collecting game made for the 2025 GMTK game jam. Luke programmed the entire game and did all of the art. I don't remember if he made any music for it LMAO. 
+- ***[Benry & Krimpst](https://another-banger.itch.io/benry-y-krimpst)*** — A two-player platformer like Water-thing and Fireboy or something. Luke, again, programmed the entire game and did all of the art. He also contributed a few pieces of music. 
+- ***[Super Cool Fighters](https://another-banger.itch.io/super-cool-fighters)*** — A Super Smash Brothers clone, but with all of OUR characters. So it's different. Luke programmed the whole game, did the art, yadda yadda, music stuff, etc.
+- ***[Stick to Procedure](https://another-banger.itch.io/stick-to-procedure)*** — A rage platformer where you play as a tiny little cute robot. Very cool. It was 100% made by Luke alone.
+- ***[Hobo Horror 2](https://another-banger.itch.io/hobo-horror-2)*** — A FNaF clone where instead of animatronics, you are trying to keep out hobos. So it's different.
+- ***[I Am Not a Robot](https://another-banger.itch.io/i-am-not-a-robot)*** — A game where you do a really long, annoying caption. It's pretty fun. All programming and art by Luke, some music also. 
+- Finally, last, and certainly least, ***[Hobo Horror](https://another-banger.itch.io/hobo-horror)*** — (see description for Hobo Horror 2)
+
+He is also currently working on programming, art and music for our upcoming game, ***[THRESHOLD]({{ '/threshold/' | relative_url }})***.
 
 ## Music
 
-- Nothing......
+Luke has made many a-tunes, whether it be for games, for the band, or even just... because. 
 
-## In conclusion.
+{% include music.html file="/Music/Cave.mp3" caption="Luke wrote this song for Benry & Krimpst. It is the cave area theme." %}
 
-I am a stupid lazy guy who has no talent or anything even, and couldn't even write my own bio page!! That's right, Matt wrote this whole thing!!!
+{% include music.html file="/Music/hopskipandalush_1.mp3" caption="Luke wrote this song for a game that I was making, and never finished because I can't program for jack. That's why he programs everything! It was a really good game though… Maybe I'll make Luke finish it for me one day." %}
 
-...It's still all true though.
+{% include music.html file="/Music/boss theme.mp3" caption="This is a song that Luke composed for Threshold." %}
+
+## In Conclusion
+
+The only thing that you should take away from this webpage, is that Luke sucks and he should've wrote this himself. That's all. Have a good day. Don't drown.
+
+If Luke wanted me to leave you with anything I'm sure he would tell you to go eat grass. That's just the kind of rude person he is.
 
 <span style="color: #ff4444; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;">Leave this page.</span>
