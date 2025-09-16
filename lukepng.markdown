@@ -23,7 +23,7 @@ Luke has made many games, including, but not limited to:
 - ***[Super Cool Fighters](https://another-banger.itch.io/super-cool-fighters)*** — A Super Smash Brothers clone, but with all of OUR characters. So it's different. Luke programmed the whole game, did the art, yadda yadda, music stuff, etc.
 - ***[Stick to Procedure](https://another-banger.itch.io/stick-to-procedure)*** — A rage platformer where you play as a tiny little cute robot. Very cool. It was 100% made by Luke alone.
 - ***[Hobo Horror 2](https://another-banger.itch.io/hobo-horror-2)*** — A FNaF clone where instead of animatronics, you are trying to keep out hobos. So it's different.
-- ***[I Am Not a Robot](https://another-banger.itch.io/i-am-not-a-robot)*** — A game where you do a really long, annoying caption. It's pretty fun. All programming and art by Luke, some music also. 
+- ***[I Am Not a Robot](https://another-banger.itch.io/i-am-not-a-robot)*** — A game where you do a really long, annoying captcha. It's pretty fun. All programming and art by Luke, some music also. 
 - Finally, last, and certainly least, ***[Hobo Horror](https://another-banger.itch.io/hobo-horror)*** — (see description for Hobo Horror 2)
 
 He is also currently working on programming, art and music for our upcoming game, ***[THRESHOLD]({{ '/threshold/' | relative_url }})***.
