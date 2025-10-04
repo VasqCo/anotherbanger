@@ -3,14 +3,18 @@ layout: "page"
 ---
 
 <style>
-:root {
-    --header-bg: rgb(15, 32, 20);
-}
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background: #18321f;
-    color: #e6ffe6;
-}
+    :root {
+        --header-bg: rgb(15, 32, 20);
+    }
+        html, body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background: #18321f;
+        color: #e6ffe6;
+    }
 header {
     background-color:rgb(15, 32, 20) !important;
 }
@@ -20,25 +24,25 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: #6ecf68;
 }
-.slide-left {
-    position: relative;
-    left: -220px;
-    opacity: 0;
-    animation: slide-left-anim 12s linear forwards;
-}
-@keyframes slide-left-anim {
-    0% {
-        left: -220px;
-        opacity: 0;
+        .slide-left {
+            position: relative;
+            left: -100vw;
+            opacity: 0;
+            animation: slide-left-anim 1.2s cubic-bezier(0.7,0,0.3,1) forwards;
+        }
+    @keyframes slide-left-anim {
+        0% {
+            left: -100vw;
+            opacity: 0;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
     }
-    10% {
-        opacity: 1;
-    }
-    100% {
-        left: 0;
-        opacity: 1;
-    }
-}
 @keyframes slide-right-anim {
     0% {
         right: -200px;

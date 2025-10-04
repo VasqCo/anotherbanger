@@ -4,6 +4,8 @@ layout: bak
 permalink: /benryandkrimpst/
 nav_order: 2
 nav_group: Games
+header_border: "rgb(243, 39, 176)"
+header_shadow: "#2196F380"
 ---
 
 # <span style="font-family: 'DePixel', 'Comic Sans MS', cursive;">Benry & Krimpst</span>

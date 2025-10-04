@@ -4,6 +4,8 @@ layout: hh2
 permalink: /hobohorror2/
 nav_order: 3
 nav_group: Games
+header_border: "#ff1744"
+header_shadow: "#ff174480"
 ---
 
 # <span style="font-family: 'VCR OSD Mono'; font-size: 2em;">HOBO HORROR 2</span>

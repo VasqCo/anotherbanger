@@ -4,6 +4,8 @@ layout: mattpng
 permalink: /mattpng/
 nav_order: 10
 nav_group: People
+header_border: "#ffffff"
+header_shadow: "#00c85380"
 ---
 
 # <span style="font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive; font-weight: bold;">Mattpng</span>

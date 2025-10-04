@@ -4,6 +4,8 @@ title: THRESHOLD
 permalink: /threshold/
 nav_order: 1
 nav_group: Games
+header_border: "#ffffff"
+header_shadow: "#7a5cff80"
 ---
 
 <script>

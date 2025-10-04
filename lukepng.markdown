@@ -4,6 +4,8 @@ layout: lukepng
 permalink: /lukepng/
 nav_order: 11
 nav_group: People
+header_border: "#00c853"
+header_shadow: "#00c85380"
 ---
 
 # LukePNG

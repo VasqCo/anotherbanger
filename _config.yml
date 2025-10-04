@@ -54,3 +54,7 @@ plugins:
 
 include:
   - Music
+
+# Custom theme defaults
+header_accent: "#ffffff"        # default border color under the header (white)
+header_accent_glow: "#00000080" # default glow color (black with alpha)

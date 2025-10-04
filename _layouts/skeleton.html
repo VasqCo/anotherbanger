@@ -12,44 +12,67 @@
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/depixel" rel="stylesheet">
     <style>
-        body {
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h2 {
-            color: #0f0f0f;
-        }
-        a {
-            color: #093969;
-        }
-        img {
-            image-rendering: pixelated;
-            image-rendering: -moz-crisp-edges;
-            image-rendering: crisp-edges;
-            max-width: 100%;
-            height: auto;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                margin: 10px;
-                padding: 10px;
-            }
-        }
 
-        img + em {
-          display: block;
-          text-align: center;
-          font-size: 0.95em;
-          max-width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-        }
+    body {
+      padding: 32px 16px;
+      background-color: #f4f4f4;
+    }
+
+    .centered-content {
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+    }
+
+    h2 {
+      color: #0f0f0f;
+    }
+
+    a {
+      color: #093969;
+    }
+
+    img {
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 8px;
+      }
+      .centered-content {
+        max-width: 100vw;
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    img + em {
+      display: block;
+      text-align: center;
+      font-size: 0.95em;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img:has(+ em) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1em;
+    }
 
     </style>
 </head>
 <body>
+    <div class="centered-content">
     <script>
     window.SITE_CONFIG = {
         baseUrl: '{{ site.baseurl }}'
@@ -83,5 +106,6 @@
         });
       });
     </script>
+    </div>
 </body>
 </html>
