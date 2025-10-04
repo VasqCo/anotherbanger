@@ -1,22 +1,39 @@
 <header style="background-color: var(--header-bg, #0c0c0c); color: #fff; padding: 0; text-align: left; position: fixed; top: 0; left: 0; width: 100%; margin: 0; z-index: 1000; --header-border: {{ page.header_border | default: site.header_border | default: '#ffffff' }}; --header-shadow: {{ page.header_shadow | default: site.header_shadow | default: '#00000080' }}; border-bottom: 2px solid var(--header-border); box-shadow: 0 6px 20px -8px var(--header-shadow);">
   <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px;">
-    <h2 class="header-title">
-      <img src="{{ '/favicon.png' | relative_url }}" alt="favicon" style="width: 40px; height: 40px; vertical-align: middle; display: inline-block; margin-right: 8px; flex-shrink: 0;" />
+    <h2 class="header-title threshold-header-title">
+      <span class="header-logo-wrapper"></span>
       <a href="{{ '/' | relative_url }}" class="site-title-link">{{ site.title }}</a>
     </h2>
-    <nav class="main-nav" style="flex-shrink: 0;">
+    <nav class="main-nav" style="flex-shrink: 0; display: flex; align-items: center; height: 60px;">
       <input type="checkbox" id="nav-toggle" class="nav-toggle" style="display:none;">
       <label for="nav-toggle" class="nav-toggle-label" style="display:none; color:#fff; background:none; border:none; padding:8px 16px; cursor:pointer; font-size:1em; border-radius: 6px;">≡ Menu</label>
-  <ul class="nav-list" style="max-width: none; list-style: none; margin: 0; display: flex; gap: 16px; align-items: center;">
+  <ul class="nav-list threshold-nav-list" style="max-width: none; list-style: none; margin: 0; display: flex; gap: 16px; align-items: center; padding: 0; line-height: 1;">
         {% assign sorted_pages = site.pages | sort: 'nav_order' %}
         {% for page in sorted_pages %}
           {% if page.title and page.permalink and page.title != '404: Page not found' %}
-            <li style="display: inline;"><a href="{{ page.url | relative_url }}" style="margin: auto; color: #fff; text-decoration: none; padding: 8px 12px; white-space: nowrap; border-radius: 6px;">{{ page.title }}</a></li>
+            <li style="display: inline; margin: 0; padding: 0; line-height: 1;"><a href="{{ page.url | relative_url }}" style="margin: 0; color: #fff; text-decoration: none; padding: 8px 12px; white-space: nowrap; border-radius: 6px; display: inline-block; line-height: 1;">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
+      <style>
+        .threshold-content ~ header .site-title-link,
+        body:has(.threshold-content) .site-title-link {
+          filter: brightness(0) invert(1);
+        }
+
+        .threshold-content ~ header .nav-list a,
+        body:has(.threshold-content) .nav-list a,
+        .threshold-content ~ header .nav-toggle-label,
+        body:has(.threshold-content) .nav-toggle-label {
+          filter: brightness(0) invert(1);
+        }
+
+        .threshold-content ~ header .header-logo-wrapper,
+        body:has(.threshold-content) .header-logo-wrapper {
+          filter: none !important;
+        }
+      </style>
     </nav>
-  </div>
 </header>
 <style>
   :root {
@@ -26,6 +43,17 @@
   header {
     border-bottom-color: var(--header-border);
     box-shadow: 0 6px 20px -8px var(--header-shadow);
+  }
+  .header-logo-wrapper {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 8px;
+    flex-shrink: 0;
+    background-image: url("{{ '/favicon.png' | relative_url }}");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .header-title {
     color: #fff !important;
@@ -39,6 +67,14 @@
     flex-shrink: 1 !important;
     overflow: hidden !important;
     text-shadow: none !important;
+    height: 60px;
+    line-height: 1 !important;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    line-height: 1;
   }
   .site-title-link {
     color: #fff;
@@ -53,10 +89,14 @@
   }
   nav ul.nav-list {
     white-space: nowrap;
-    padding: 0; /* keep desktop tidy */
+    padding: 0;
+    margin: 0;
+    line-height: 1;
   }
   nav ul li, nav ul li a {
     white-space: nowrap;
+    line-height: 1;
+    margin: 0;
   }
   nav ul li a:hover {
     background: rgba(255, 255, 255, 0.15);

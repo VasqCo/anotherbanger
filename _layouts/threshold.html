@@ -2,7 +2,6 @@
 layout: "page"
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 <style>
     :root {
         --header-bg: rgb(57, 33, 105);
@@ -13,30 +12,65 @@ layout: "page"
         padding: 0;
     }
     body {
-        font-family: 'Indie Flower', cursive, 'Segoe UI', Arial, sans-serif;
-        font-weight: bolder;
+        font-family: 'FntMain', Arial, sans-serif;
+        /* font-weight: 400; */
+        /* font-style: normal; */
         background-color: #111;
         background-image: url('{{ "/sSpaceBG.png" | relative_url }}');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        image-rendering: pixelated;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: crisp-edges;
         color: #fff;
     }
     a {
-        color: #00bfff;
+        color: #fff;
+        text-decoration-color: rgba(255, 255, 255, 0.6);
     }
 
     h1, h2, h3, h4, h5, h6 {
-        color: #fff;
-        text-shadow: 0 0 2px #fff, 0 0 4px #00bfff;
+        font-family: 'FntMain', Arial, sans-serif;
+        color: #fff !important;
+        margin: 0;
+    }
+    .fntmain-font {
+        font-family: 'FntMain', Arial, sans-serif !important;
     }
     header {
         background-color: rgb(57, 33, 105) !important;
+        font-size: 150%;
+    }
+
+    .threshold-content {
+        color: #fff;
+        font-size: 200%;
+    }
+
+    .threshold-content :where(h1, h2, h3, h4, h5, h6, p, li, small, span, em, strong, blockquote, a) {
+        color: inherit;
+        filter: brightness(0) invert(1)
+    }
+
+    .threshold-content :where(h1, h2, h3, h4, h5, h6) {
+        text-shadow:
+          0 0 8px #00aaff
+    }
+
+    .threshold-content a:hover {
+        text-decoration-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .threshold-content img,
+    .threshold-content video,
+    .threshold-content canvas,
+    .threshold-content svg {
+        filter: none !important;
+    }
+    .header-logo-wrapper {
+        filter: none !important;
     }
 </style>
 
+<div class="threshold-content">
 {{ content }}
+</div>

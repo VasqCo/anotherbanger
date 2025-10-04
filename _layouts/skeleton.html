@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script defer data-domain="anotherbanger.net" src="https://plausible.io/js/script.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/scripts/wave.css' | relative_url }}">
@@ -12,10 +10,23 @@
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/depixel" rel="stylesheet">
     <style>
+    @font-face {
+      font-family: 'FntMain';
+      src: url("{{ '/fonts/FntMain-Bitmap.woff2' | relative_url }}") format('woff2'),
+           url("{{ '/fonts/FntMain-Bitmap.woff' | relative_url }}") format('woff');
+      font-display: swap;
+    }
 
     body {
       padding: 32px 16px;
       background-color: #f4f4f4;
+    }
+
+    .fntmain-font, [style*="font-family: 'FntMain'"], [style*='font-family: "FntMain"'], [style*="font-family:FntMain"] {
+      -webkit-font-smoothing: none !important;
+      -moz-osx-font-smoothing: auto !important;
+      image-rendering: pixelated !important;
+      text-rendering: optimizeSpeed !important;
     }
 
     .centered-content {
