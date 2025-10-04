@@ -27,4 +27,4 @@ Strange portals have appeared across Okana, bringing dangerous creatures that th
 
 ### *Can you cross the THRESHOLD and enter the abyss?*
 
-<small style="color: #666; opacity: 0.2; font-family: 'Dancing Script', cursive; font-weight:700;"><em>More shall be revealed to the patient.</em></small>
+<small style="color: #666; opacity: 0.2; font-family: 'Dancing Script', cursive; font-weight:700; font-size: 12px;"><em>More shall be revealed to the patient.</em></small>
