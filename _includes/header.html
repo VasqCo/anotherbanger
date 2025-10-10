@@ -11,7 +11,7 @@
         {% assign sorted_pages = site.pages | sort: 'nav_order' %}
         {% for page in sorted_pages %}
           {% if page.title and page.permalink and page.title != '404: Page not found' %}
-            <li style="display: inline; margin: 0; padding: 0; line-height: 1;"><a href="{{ page.url | relative_url }}" style="margin: 0; color: #fff; text-decoration: none; padding: 8px 12px; white-space: nowrap; border-radius: 6px; display: inline-block; line-height: 1;">{{ page.title }}</a></li>
+            <li style="display: inline; margin: 0; padding: 0; line-height: 1;"><a href="{{ page.url | relative_url }}" style="margin: 0; color: #fff; padding: 8px 12px; white-space: nowrap; border-radius: 6px; display: inline-block; line-height: 1;">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
@@ -97,9 +97,10 @@
     white-space: nowrap;
     line-height: 1;
     margin: 0;
+    text-decoration: none;
   }
   nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.15);
+    text-decoration: underline;
   }
   .nav-toggle-label:hover {
     background: rgba(255, 255, 255, 0.15);
@@ -161,7 +162,7 @@
       overflow: hidden;
     }
     .main-nav .nav-list li a:hover {
-      background: rgba(255, 255, 255, 0.1);
+      text-decoration: underline;
     }
     .main-nav .nav-list li:first-child a {
       border-radius: 8px 8px 0 0;
