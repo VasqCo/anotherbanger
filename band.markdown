@@ -22,7 +22,7 @@ Another Banger is a musical duo/band best known for creating the god-awful "Brit
 **_The Diary / Journal of Deranged Psychopaths,_** — released September 8th / 7th / 13th, 2025, depending on who you ask — is Another Banger's fourth home studio album. It tells the story of two musicians who lose their minds with jealousy after their old mates' band blows up, leading them to commit horrible atrocities in the name of "justice."
 
 ![11:30 Burrito album art](https://i.scdn.co/image/ab67616d0000b2734fea10d023094dae1ea777b3)
-*11:30 Burrito album cover.*
+*11:30 Burrito album cover. — Fun fact about this album cover, it won first place in an art contest. Don't ask me how.*
 
 ![$5 Egg album art](https://i.scdn.co/image/ab67616d0000b2738a6f20aaa83228fb191d6a8f)
 *$5 Egg album cover.*
