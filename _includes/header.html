@@ -1,13 +1,13 @@
-<header style="background-color: var(--header-bg, #0c0c0c); color: #fff; padding: 0; text-align: left; position: fixed; top: 0; left: 0; width: 100%; margin: 0; z-index: 1000; --header-border: {{ page.header_border | default: site.header_border | default: '#ffffff' }}; --header-shadow: {{ page.header_shadow | default: site.header_shadow | default: '#00000080' }}; border-bottom: 2px solid var(--header-border); box-shadow: 0 6px 20px -8px var(--header-shadow);">
-  <div style="display: flex; align-items: center; justify-content: space-between; height: 60px; padding: 0 40px;">
+<header id="site-header" style="background-color: var(--header-bg, #0c0c0c); color: #fff; padding: 0; text-align: left; position: fixed; top: 0; left: 0; width: 100%; margin: 0; z-index: 1000; --header-border: {{ page.header_border | default: site.header_border | default: '#ffffff' }}; --header-shadow: {{ page.header_shadow | default: site.header_shadow | default: '#00000080' }}; border-bottom: 2px solid var(--header-border); box-shadow: 0 6px 20px -8px var(--header-shadow);">
+  <div class="header-inner">
     <h2 class="header-title threshold-header-title">
       <span class="header-logo-wrapper"></span>
       <a href="{{ '/' | relative_url }}" class="site-title-link">{{ site.title }}</a>
     </h2>
-    <nav class="main-nav" style="flex-shrink: 0; display: flex; align-items: center; height: 60px;">
+    <nav class="main-nav" style="flex: 1 0 auto; display: flex; align-items: center; min-height: 60px; position: relative;">
       <input type="checkbox" id="nav-toggle" class="nav-toggle" style="display:none;">
       <label for="nav-toggle" class="nav-toggle-label" style="display:none; color:#fff; background:none; border:none; padding:8px 16px; cursor:pointer; font-size:1em; border-radius: 6px;">≡ Menu</label>
-  <ul class="nav-list threshold-nav-list" style="max-width: none; list-style: none; margin: 0; display: flex; gap: 16px; align-items: center; padding: 0; line-height: 1;">
+      <ul class="nav-list threshold-nav-list" style="max-width: none; list-style: none; margin: 0; display: flex; gap: 16px; align-items: center; padding: 0; line-height: 1;">
         {% assign sorted_pages = site.pages | sort: 'nav_order' %}
         {% for page in sorted_pages %}
           {% if page.title and page.permalink and page.title != '404: Page not found' %}
@@ -38,11 +38,26 @@
 <style>
   :root {
     --header-bg: #0c0c0c;
+    --header-offset: 60px;
+  }
+
+  body {
+    padding-top: var(--header-offset);
   }
 
   header {
     border-bottom-color: var(--header-border);
     box-shadow: 0 6px 20px -8px var(--header-shadow);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 60px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
   }
   .header-logo-wrapper {
     width: 40px;
@@ -61,28 +76,34 @@
     display: flex !important;
     align-items: center !important;
     gap: 12px !important;
-    font-size: 1.5em !important;
+    font-size: clamp(1.1rem, 1.5vw + 1rem, 1.7rem) !important;
     white-space: nowrap !important;
     min-width: 0 !important;
-    flex-shrink: 1 !important;
-    overflow: hidden !important;
+    flex: 1 1 320px !important;
+    overflow: visible !important;
     text-shadow: none !important;
-    height: 60px;
-    line-height: 1 !important;
+    min-height: 60px;
+    line-height: 1.2 !important;
+    max-width: min(100%, 520px);
+    word-break: break-word;
   }
   .main-nav {
     display: flex;
     align-items: center;
-    height: 60px;
+    min-height: 60px;
     line-height: 1;
+    margin-left: auto;
+    justify-content: flex-end;
   }
   .site-title-link {
     color: #fff;
     text-decoration: none;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
+    text-overflow: clip;
     min-width: 0;
+    display: inline-block;
+    max-width: 100%;
   }
   .site-title-link:hover {
     text-decoration: underline;
@@ -121,7 +142,7 @@
       position: absolute;
       right: 40px;
       left: auto;
-      top: 60px;
+      top: var(--header-offset);
       min-width: 200px;
       width: max-content;
       max-width: 90vw;
@@ -176,6 +197,23 @@
     .main-nav .nav-toggle:checked + .nav-toggle-label + .nav-list {
       display: flex !important;
     }
+    .header-inner {
+      padding: 0 20px;
+    }
   }
 </style>
-<div style="height: 30px;"></div>
+<script>
+  (function() {
+    const updateHeaderOffset = () => {
+      const headerEl = document.getElementById('site-header');
+      if (!headerEl) {
+        return;
+      }
+      document.documentElement.style.setProperty('--header-offset', `${headerEl.offsetHeight}px`);
+    };
+    window.addEventListener('resize', updateHeaderOffset, { passive: true });
+    window.addEventListener('load', updateHeaderOffset, { passive: true });
+    document.addEventListener('DOMContentLoaded', updateHeaderOffset);
+    updateHeaderOffset();
+  })();
+</script>
