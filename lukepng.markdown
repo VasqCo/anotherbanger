@@ -10,7 +10,7 @@ header_shadow: "#00c85380"
 
 # LukePNG
 
-![Lukepng profile picture]({{ '/luke.png' | relative_url }}){: #luke-profile style="width:180px;"}
+![Lukepng profile picture]({{ '/Luke .png' | relative_url }}){: #luke-profile style="width:180px;"}
 
 Hello! This is Matt. I will be writing about Luke for him because he didn't want to do it. He's too busy playing Minecraft or something.
 
