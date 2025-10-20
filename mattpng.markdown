@@ -12,7 +12,7 @@ header_shadow: "#00c85380"
 
 <div id="matt-profile-placeholder" style="width:180px; height:180px; display:inline-block; vertical-align:top; visibility:hidden; position:absolute;"></div>
 <div style="position:relative; height:180px;">
-    <img src="{{ '/matt.png' | relative_url }}" alt="Mattpng Profile Picture" id="matt-profile" class="slide-left" style="width:180px; height:180px; position:absolute; left:0; top:0; z-index:1; user-select:none;" draggable="false" />
+    <img src="{{ '/Matt .png' | relative_url }}" alt="Mattpng Profile Picture" id="matt-profile" class="slide-left" style="width:180px; height:180px; position:absolute; left:0; top:0; z-index:1; user-select:none;" draggable="false" />
 </div>
 
 Hello. This is he! Mattpng!
