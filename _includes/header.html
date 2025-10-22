@@ -38,7 +38,7 @@
 <style>
   :root {
     --header-bg: #0c0c0c;
-    --header-offset: 80px;
+    --header-offset: 64px;
   }
 
   body {
@@ -54,9 +54,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-  min-height: 80px; /* reduced header height */
+  min-height: 64px;
     padding: 0 40px;
-    flex-wrap: nowrap; /* avoid stacking */
+    flex-wrap: nowrap;
     box-sizing: border-box;
   }
   .header-logo-wrapper {
@@ -80,12 +80,12 @@
     white-space: nowrap !important;
     min-width: 0 !important;
     flex: 1 1 320px !important;
-  overflow: hidden !important; /* hide overflow when truncated */
+    overflow: hidden !important;
     text-shadow: none !important;
-  min-height: 80px;
+    min-height: 64px;
     line-height: 1.2 !important;
     max-width: 100%;
-    text-overflow: ellipsis; /* show ellipsis when title is too long */
+    text-overflow: ellipsis;
     line-clamp: 1;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -94,7 +94,7 @@
   .main-nav {
     display: flex;
     align-items: center;
-    min-height: 80px;
+  min-height: 64px;
     line-height: 1;
     margin-left: auto;
     justify-content: flex-end;
@@ -130,7 +130,7 @@
   .nav-toggle-label:hover {
     background: rgba(255, 255, 255, 0.15);
   }
-  /* Improve keyboard accessibility without animations */
+
   .main-nav .nav-list a:focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.6);
     outline-offset: -2px;
@@ -157,7 +157,6 @@
       border-radius: 0;
       text-align: left;
     }
-    /* remove decorative triangle */
     .main-nav .nav-list::before { display: none; }
     .main-nav .nav-list li {
       width: 100%;
@@ -191,10 +190,9 @@
     }
     .header-inner {
       padding: 0 16px;
-      min-height: 64px; /* slightly smaller on mobile */
+      min-height: 64px;
     }
 
-    /* Show the nav toggle on mobile and ensure it's positioned at the far right */
     .nav-toggle-label {
       display: block !important;
       position: absolute;
@@ -204,14 +202,12 @@
       z-index: 1102;
     }
 
-    /* Ensure header title truncates instead of wrapping under the toggle */
     .header-title {
       min-width: 0 !important;
       overflow: hidden !important;
-      padding-right: 48px; /* reserve space for the toggle */
+      padding-right: 48px;
     }
 
-    /* Also make sure the inner link truncates cleanly */
     .header-title .site-title-link {
       display: block;
       overflow: hidden;
