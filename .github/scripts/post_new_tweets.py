@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+import json
 import os
 import re
+import secrets
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -13,6 +15,36 @@ try:
     import tweepy
 except ImportError:
     tweepy = None
+
+
+    DEFAULT_FEATURES = {
+        "rweb_lists_timeline_redesign_enabled": False,
+        "responsive_web_graphql_exclude_directive_enabled": True,
+        "verified_phone_label_enabled": False,
+        "creator_subscriptions_tweet_preview_api_enabled": True,
+        "responsive_web_graphql_timeline_navigation_enabled": True,
+        "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
+        "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": False,
+        "responsive_web_edit_tweet_api_enabled": True,
+        "longform_notetweets_consumption_enabled": True,
+        "responsive_web_twitter_blue_subscription_verification_badge_is_enabled": True,
+        "longform_notetweets_rich_text_read_enabled": True,
+        "longform_notetweets_inline_media_enabled": True,
+        "responsive_web_enhance_cards_enabled": False,
+        "standardized_nudges_misinfo": True,
+        "tweet_awards_web_tipping_enabled": False,
+        "responsive_web_media_download_video_enabled": False,
+        "freedom_of_speech_not_reach_fetch_enabled": True,
+        "responsive_web_promoted_badge_is_enabled": True,
+        "responsive_web_graphql_refetch_enabled": True,
+        "responsive_web_graphql_send_comment_to_h2_enabled": False,
+    }
+
+
+    DEFAULT_FIELD_TOGGLES = {
+        "withAuxiliaryUserLabels": False,
+        "withArticleRichContentState": False,
+    }
 
 
 def load_post(post_path: Path) -> tuple[dict, str]:
@@ -181,6 +213,21 @@ def determine_mode() -> str:
     return mode
 
 
+def load_json_from_env(name: str, default: dict[str, Any]) -> dict[str, Any]:
+    raw = os.getenv(name)
+    if not raw:
+        return default
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"Unable to parse {name} as JSON: {exc}") from exc
+    if not isinstance(parsed, dict):
+        raise SystemExit(f"Environment variable {name} must contain a JSON object")
+    merged = default.copy()
+    merged.update(parsed)
+    return merged
+
+
 def create_api_client() -> Any:
     if tweepy is None:
         raise SystemExit("tweepy is not installed; install it or use TWITTER_MODE=web")
@@ -216,6 +263,7 @@ def post_status_via_web(status: str) -> None:
     auth_token = os.getenv("TWITTER_AUTH_TOKEN")
     ct0_token = os.getenv("TWITTER_CT0")
     bearer_token = os.getenv("TWITTER_BEARER_TOKEN")
+    query_id = os.getenv("TWITTER_QUERY_ID", "MtyT_TbO2PpwaFHNPK2qoQ").strip()
 
     missing = [
         name
@@ -223,6 +271,7 @@ def post_status_via_web(status: str) -> None:
             ("TWITTER_AUTH_TOKEN", auth_token),
             ("TWITTER_CT0", ct0_token),
             ("TWITTER_BEARER_TOKEN", bearer_token),
+            ("TWITTER_QUERY_ID", query_id),
         )
         if not value
     ]
@@ -233,7 +282,7 @@ def post_status_via_web(status: str) -> None:
         "Accept": "*/*",
         "Accept-Language": "en-US,en;q=0.9",
         "Authorization": f"Bearer {bearer_token}",
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
         "Origin": "https://x.com",
         "Referer": "https://x.com/compose/tweet",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
@@ -255,18 +304,36 @@ def post_status_via_web(status: str) -> None:
             name, _, value = part.strip().partition("=")
             if name and value:
                 cookies[name] = value
-    payload = {
-        "status": status,
-        "batch_mode": "off",
-        "trim_user": "false",
+    features = load_json_from_env("TWITTER_FEATURES_JSON", DEFAULT_FEATURES)
+    field_toggles = load_json_from_env("TWITTER_FIELD_TOGGLES_JSON", DEFAULT_FIELD_TOGGLES)
+
+    variables = {
+        "tweet_text": status,
+        "dark_request": False,
+        "media": {
+            "media_entities": [],
+            "possibly_sensitive": False,
+        },
+        "semantic_annotation_ids": [],
     }
 
+    payload = {
+        "queryId": query_id,
+        "variables": variables,
+        "features": features,
+        "fieldToggles": field_toggles,
+    }
+
+    transaction_id = secrets.token_urlsafe(16)
+    headers["X-Client-Transaction-Id"] = transaction_id
+
+    endpoint = f"https://x.com/i/api/graphql/{query_id}/CreateTweet"
     response = requests.post(
-        "https://x.com/i/api/1.1/statuses/update.json",
+        endpoint,
         headers=headers,
         cookies=cookies,
-        data=payload,
-        timeout=10,
+        json=payload,
+        timeout=15,
     )
 
     if response.status_code != 200:
