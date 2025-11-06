@@ -230,6 +230,8 @@ def post_status_via_web(status: str) -> None:
         raise SystemExit(f"Missing web session secrets: {', '.join(missing)}")
 
     headers = {
+        "Accept": "*/*",
+        "Accept-Language": "en-US,en;q=0.9",
         "Authorization": f"Bearer {bearer_token}",
         "Content-Type": "application/x-www-form-urlencoded",
         "Origin": "https://x.com",
@@ -239,6 +241,8 @@ def post_status_via_web(status: str) -> None:
         "X-Twitter-Active-User": "yes",
         "X-Twitter-Auth-Type": "OAuth2Session",
         "X-Twitter-Client-Language": "en",
+        "X-Twitter-Client-Name": "Twitter Web App",
+        "X-Twitter-Client-Version": "9.66.0",
     }
 
     extra_cookie_string = os.getenv("TWITTER_COOKIE_STRING", "")
@@ -250,7 +254,7 @@ def post_status_via_web(status: str) -> None:
         for part in extra_cookie_string.split(";"):
             name, _, value = part.strip().partition("=")
             if name and value:
-                cookies.setdefault(name, value)
+                cookies[name] = value
     payload = {
         "status": status,
         "batch_mode": "off",
