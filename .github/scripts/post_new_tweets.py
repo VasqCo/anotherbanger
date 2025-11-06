@@ -18,6 +18,7 @@ except ImportError:
 
 
 DEFAULT_FEATURES = {
+    "responsive_web_home_pinned_timelines_enabled": False,
     "rweb_lists_timeline_redesign_enabled": False,
     "responsive_web_graphql_exclude_directive_enabled": True,
     "verified_phone_label_enabled": False,
@@ -48,6 +49,11 @@ DEFAULT_FEATURES = {
     "responsive_web_twitter_article_tweet_consumption_enabled": False,
     "responsive_web_grok_share_attachment_enabled": False,
     "rweb_tipjar_consumption": False,
+    "responsive_web_grok_community_note_auto_translation_is_enabled": False,
+    "c9s_tweet_anatomy_moderator_badge_enabled": False,
+    "responsive_web_grok_analyze_post_followups_enabled": False,
+    "articles_preview_enabled": False,
+    "premium_content_api_read_enabled": False,
 }
 
 
