@@ -234,16 +234,23 @@ def post_status_via_web(status: str) -> None:
         "Content-Type": "application/x-www-form-urlencoded",
         "Origin": "https://x.com",
         "Referer": "https://x.com/compose/tweet",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "X-Csrf-Token": ct0_token,
         "X-Twitter-Active-User": "yes",
         "X-Twitter-Auth-Type": "OAuth2Session",
         "X-Twitter-Client-Language": "en",
     }
-    cookies = {
+
+    extra_cookie_string = os.getenv("TWITTER_COOKIE_STRING", "")
+    cookies: dict[str, str] = {
         "auth_token": auth_token,
         "ct0": ct0_token,
     }
+    if extra_cookie_string:
+        for part in extra_cookie_string.split(";"):
+            name, _, value = part.strip().partition("=")
+            if name and value:
+                cookies.setdefault(name, value)
     payload = {
         "status": status,
         "batch_mode": "off",
@@ -251,7 +258,7 @@ def post_status_via_web(status: str) -> None:
     }
 
     response = requests.post(
-        "https://api.x.com/1.1/statuses/update.json",
+        "https://x.com/i/api/1.1/statuses/update.json",
         headers=headers,
         cookies=cookies,
         data=payload,
