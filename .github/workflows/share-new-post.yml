@@ -27,7 +27,8 @@ jobs:
           if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
             BEFORE="$(git rev-list --max-parents=0 HEAD)"
           fi
-          git diff --name-status "$BEFORE" ${{ github.sha }} -- '_posts/**/*.md' '_posts/**/*.markdown' | awk '$1 == "A" {print $2}' > new_posts.txt
+          git diff --name-status "$BEFORE" ${{ github.sha }} -- ':(glob)_posts/**/*.md' ':(glob)_posts/**/*.markdown' | awk '$1 == "A" {print $2}' > new_posts.txt
+          echo "Detected posts:" && cat new_posts.txt || true
           if [ ! -s new_posts.txt ]; then
             echo "found=false" >> "$GITHUB_OUTPUT"
             exit 0
