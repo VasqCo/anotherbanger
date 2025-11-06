@@ -38,6 +38,11 @@ DEFAULT_FEATURES = {
     "responsive_web_promoted_badge_is_enabled": True,
     "responsive_web_graphql_refetch_enabled": True,
     "responsive_web_graphql_send_comment_to_h2_enabled": False,
+    "responsive_web_grok_imagine_annotation_enabled": False,
+    "profile_label_improvements_pcf_label_in_post_enabled": False,
+    "communities_web_enable_tweet_community_results_fetch": False,
+    "responsive_web_jetfuel_frame": False,
+    "graphql_is_translatable_rweb_tweet_is_translatable": False,
 }
 
 
