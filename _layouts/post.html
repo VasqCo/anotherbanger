@@ -1,0 +1,70 @@
+---
+layout: "skeleton"
+---
+
+<style>
+.post-header {
+  margin-bottom: 1.5rem;
+}
+
+.post-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.post-meta {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.post-meta time {
+  font-style: italic;
+}
+
+.post-meta .post-author::after {
+  content: " • ";
+}
+
+.post-body {
+  font-size: 1rem;
+}
+
+.post-body p {
+  margin-bottom: 1.1rem;
+}
+
+.post-footer {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.post-tag {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  background: #ececec;
+  border-radius: 999px;
+}
+
+</style>
+<article class="post">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      {% if page.author %}<span class="post-author">{{ page.author }}</span>{% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </p>
+  </header>
+  <section class="post-body">
+    {{ content }}
+  </section>
+  {% if page.tags and page.tags.size > 0 %}
+    <footer class="post-footer">
+      <strong>Tags:</strong>
+      {% for tag in page.tags %}
+        <span class="post-tag">{{ tag }}</span>
+      {% endfor %}
+    </footer>
+  {% endif %}
+</article>
