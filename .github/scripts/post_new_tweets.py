@@ -43,6 +43,11 @@ DEFAULT_FEATURES = {
     "communities_web_enable_tweet_community_results_fetch": False,
     "responsive_web_jetfuel_frame": False,
     "graphql_is_translatable_rweb_tweet_is_translatable": False,
+    "responsive_web_profile_redirect_enabled": False,
+    "responsive_web_grok_analysis_button_from_backend": False,
+    "responsive_web_twitter_article_tweet_consumption_enabled": False,
+    "responsive_web_grok_share_attachment_enabled": False,
+    "rweb_tipjar_consumption": False,
 }
 
 
