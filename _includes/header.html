@@ -1,4 +1,4 @@
-<header id="site-header" style="background-color: var(--header-bg, #0c0c0c); color: #fff; padding: 0; text-align: left; position: fixed; top: 0; left: 0; width: 100%; margin: 0; z-index: 1000; --header-border: {{ page.header_border | default: site.header_border | default: '#ffffff' }}; --header-shadow: {{ page.header_shadow | default: site.header_shadow | default: '#00000080' }}; border-bottom: 2px solid var(--header-border); box-shadow: 0 6px 20px -8px var(--header-shadow);">
+<header id="site-header">
   <div class="header-inner">
     <h2 class="header-title threshold-header-title">
       <span class="header-logo-wrapper"></span>
@@ -36,8 +36,11 @@
     </nav>
 </header>
 <style>
+
   :root {
     --header-bg: #0c0c0c;
+    --header-border: #fff;
+    --header-shadow: #00000080;
     --header-offset: 64px;
   }
 
@@ -45,9 +48,19 @@
     padding-top: var(--header-offset);
   }
 
-  header {
-    border-bottom-color: var(--header-border);
-    box-shadow: 0 6px 20px -8px var(--header-shadow);
+  #site-header {
+    background-color: var(--header-bg, #0c0c0c);
+    color: #fff;
+    padding: 0;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--header-border, #fff);
+    box-shadow: 0 6px 20px -8px var(--header-shadow, #00000080);
   }
   .header-inner {
     display: flex;
