@@ -1,39 +1,40 @@
 <header id="site-header">
-  <div class="header-inner">
-    <h2 class="header-title threshold-header-title">
-      <span class="header-logo-wrapper"></span>
-      <a href="{{ '/' | relative_url }}" class="site-title-link">{{ site.title }}</a>
-    </h2>
-    <nav class="main-nav" style="flex: 1 0 auto; display: flex; align-items: center; min-height: 60px; position: relative;">
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" style="display:none;">
-      <label for="nav-toggle" class="nav-toggle-label" style="display:none; color:#fff; background:none; border:none; padding:8px 16px; cursor:pointer; font-size:1em; border-radius: 6px;">≡</label>
-      <ul class="nav-list threshold-nav-list" style="max-width: none; list-style: none; margin: 0; display: flex; gap: 16px; align-items: center; padding: 0; line-height: 1;">
-        {% assign sorted_pages = site.pages | sort: 'nav_order' %}
-        {% for page in sorted_pages %}
-          {% if page.title and page.permalink and page.title != '404: Page not found' %}
-            <li style="display: inline; margin: 0; padding: 0; line-height: 1;"><a href="{{ page.url | relative_url }}" style="margin: 0; color: #fff; padding: 8px 12px; border-radius: 6px; display: inline-block; line-height: 1;">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <style>
-        .threshold-content ~ header .site-title-link,
-        body:has(.threshold-content) .site-title-link {
-          filter: brightness(0) invert(1);
-        }
+    <div class="header-inner">
+        <h2 class="header-title threshold-header-title" style="color: var(--heading-color, inherit);">
+          <span class="header-logo-wrapper"></span>
+          <a href="{{ '/' | relative_url }}" class="site-title-link" style="color: inherit;">{{ site.title }}</a>
+        </h2>
+        <nav class="main-nav" style="flex: 1 0 auto; display: flex; align-items: center; min-height: 60px; position: relative;">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" style="display:none;">
+            <label for="nav-toggle" class="nav-toggle-label" style="display:none; color:#fff; background:none; border:none; padding:8px 16px; cursor:pointer; font-size:1em; border-radius: 6px;">≡</label>
+            <ul class="nav-list threshold-nav-list" style="max-width: none; list-style: none; margin: 0; display: flex; gap: 16px; align-items: center; padding: 0; line-height: 1;">
+                {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+                {% for page in sorted_pages %}
+                    {% if page.title and page.permalink and page.title != '404: Page not found' %}
+                        <li style="display: inline; margin: 0; padding: 0; line-height: 1;"><a href="{{ page.url | relative_url }}" style="margin: 0; color: var(--nav-link-color, var(--heading-color, inherit)); padding: 8px 12px; border-radius: 6px; display: inline-block; line-height: 1;">{{ page.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <style>
+                .threshold-content ~ header .site-title-link,
+                body:has(.threshold-content) .site-title-link {
+                    filter: brightness(0) invert(1);
+                }
 
-        .threshold-content ~ header .nav-list a,
-        body:has(.threshold-content) .nav-list a,
-        .threshold-content ~ header .nav-toggle-label,
-        body:has(.threshold-content) .nav-toggle-label {
-          filter: brightness(0) invert(1);
-        }
+                .threshold-content ~ header .nav-list a,
+                body:has(.threshold-content) .nav-list a,
+                .threshold-content ~ header .nav-toggle-label,
+                body:has(.threshold-content) .nav-toggle-label {
+                    filter: brightness(0) invert(1);
+                }
 
-        .threshold-content ~ header .header-logo-wrapper,
-        body:has(.threshold-content) .header-logo-wrapper {
-          filter: none !important;
-        }
-      </style>
-    </nav>
+                .threshold-content ~ header .header-logo-wrapper,
+                body:has(.threshold-content) .header-logo-wrapper {
+                    filter: none !important;
+                }
+            </style>
+        </nav>
+    </div>
 </header>
 <style>
 
@@ -84,7 +85,7 @@
     background-position: center;
   }
   .header-title {
-    color: #fff !important;
+    color: var(--heading-color, inherit) !important;
     margin: 0 !important;
     display: flex !important;
     align-items: center !important;
@@ -113,7 +114,7 @@
     justify-content: flex-end;
   }
   .site-title-link {
-    color: #fff;
+    color: inherit;
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
@@ -147,6 +148,12 @@
   .main-nav .nav-list a:focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.6);
     outline-offset: -2px;
+  }
+
+  /* Nav menu links use nav color variable */
+  .main-nav .nav-list a,
+  nav .nav-list a {
+    color: var(--nav-link-color, var(--heading-color, inherit)) !important;
   }
   @media (max-width: 1000px) {
     .main-nav .nav-list {
