@@ -33,3 +33,5 @@ If you're interested in checking out any of our games, look through our [itch.io
 Thank you for taking the time to look through our website! Enjoy your stay. We'd offer you complimentary coffee or a mint, but our budget was blown on the stylized text.
 
 If you have any questions or inquiries, email Matt at mattpng@anotherbanger.net or Luke at lukepng@anotherbanger.net
+
+Also we have a [blog](/blog/) now. Read our [blog, now](/blog/).
