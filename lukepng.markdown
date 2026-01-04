@@ -16,42 +16,6 @@ Hello! This is Matt. I will be writing about Luke for him because he didn't want
 
 Luke is the head (and sole) programmer for Another Banger! He is additionally the sole artist, as well as a co-writer and co-composer.
 
-## Traits
-
-Luke has many traits, including, but not limited to, in order:
-
-1. Rude
-2. Nasty
-3. Rudu
-4. Nasy
-5. Blasy
-6. Clean
-7. Absolutely deplorable
-8. Unable to be touched with a 39 & 1/2 ft pole
-9. Stink
-10. Stank
-11. Stunk
-12. Bunk
-13. Funk
-14. Skunk
-15. Not hunk
-16. Blue haired liberal
-17. Just kidding I am woke
-18. But he is one
-19. He's not woke though
-20. He loves instagram
-21. He loves to post on instagram
-22. Doctors hate him
-23. Green fur
-24. Cuddly as a cactus
-25. A mean one
-26. Mr. Grinch
-27. Is bad at writing
-28. Even worse at writing music
-29. Can't program he has to make me secretly program all of his games for him
-
-*list was written entirely by an anti-Luke terrorist organisation (Matt).*
-
 ## Games
 
 Luke has made many games, including, but not limited to:
@@ -75,6 +39,8 @@ Luke has made many a-tunes, whether it be for games, for the band, or even just.
 {% include music.html file="/Music/hopskipandalush_1.mp3" caption="Luke wrote this song for a game that I was making, and never finished because I can't program for jack. That's why he programs everything! It was a really good game though… Maybe I'll make Luke finish it for me one day." %}
 
 {% include music.html file="/Music/boss theme.mp3" caption="This is a song that Luke composed for Threshold." %}
+
+{% include music.html file="/Music/Sag Hag.mp3" caption="Sag Hag" %}
 
 ## In Conclusion
 
