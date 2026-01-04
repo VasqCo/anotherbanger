@@ -40,7 +40,11 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 {% include music.html file="/Music/Character Theme.mp3" caption="This is a song from our upcoming game <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>." %}
 
-{% include music.html file="/Music/Rude Bus.mp3" caption="This song was once an idea for <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>, but will now go to waste." %}
+{% include music.html file="/Music/Threshold Area Theme.mp3" caption="Area theme for <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>. I've always been especially proud of this song. Dunno why." %}
+
+{% include music.html file="/Music/Battle Against a Worme.mp3" caption="This song is called Battle Against a Worme. I wrote it for a part of a story where you battle against a worme." %}
+
+{% include music.html file="/Music/Bad Jazz.mp3" caption="Bad Jazz." %}
 
 ### Band
 
