@@ -32,15 +32,15 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 ### Games
 
+{% include music.html file="/Music/Character Theme.mp3" caption="This is a song from our upcoming game <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>." %}
+
+{% include music.html file="/Music/Threshold Area Theme.mp3" caption="Area theme for <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>. I've always been especially proud of this song. Dunno why." %}
+
 {% include music.html file="/Music/K&B.mp3" caption="This song was written for Benry & Krimpst! It is the main theme that plays during the first major portion of the game." %}
 
 {% include music.html file="/Music/Super Cool Fighters.mp3" caption="This song was written for Super Cool Fighters! It is <em>also</em> the main theme that plays on the default stage, I think." %}
 
 {% include music.html file="/Music/Fun Gus the Fun Guy.mp3" caption="This song was written for The Tale of the Tortoise! Originally, at least. The boss that I wrote this song for, \"Fun Gus,\" never ended up appearing in Tortoise, but did end up appearing in Benry & Krimpst! So I changed the style to fit that game, and that's the version you're listening to now." %}
-
-{% include music.html file="/Music/Character Theme.mp3" caption="This is a song from our upcoming game <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>." %}
-
-{% include music.html file="/Music/Threshold Area Theme.mp3" caption="Area theme for <a href=\"{{ '/threshold/' | relative_url }}\">THRESHOLD</a>. I've always been especially proud of this song. Dunno why." %}
 
 {% include music.html file="/Music/Battle Against a Worme.mp3" caption="This song is called Battle Against a Worme. I wrote it for a part of a story where you battle against a worme." %}
 
@@ -54,7 +54,7 @@ I am also in a band with Luke called <span class="wave" style="font-family: 'Com
 
 If you want to support us, we're Another Banger on streaming services but Vasq Co. Music on Apple Music for some reason (CORRECTION: OUR NEWEST ALBUM IS ON APPLE MUSIC UNDER THE NAME ANOTHER BANGER, BUT ONLY THAT ONE. ALL OTHER RELEASES ARE STILL UNDER VASQ CO. MUSIC). They won't let us change it.
 
-You can also check out my [YouTube channel](https://www.youtube.com/@mattpng.) for more examples of things I do!
+You can also check out my [YouTube channel](https://www.youtube.com/@mattpng.) for more examples of things I do! (I never post)
 
 ## CONCLUSION!!!!
 
