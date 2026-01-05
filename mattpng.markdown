@@ -22,7 +22,7 @@ Impressed? No?
 
 ...
 
-I have created many awesome characters and written music for our games such as [THRESHOLD](threshold), Benry & Krimpst, Super Cool Fighters, HOBO HORROR 2 (we don't talk about the first one), and others that we never finished!
+I have created many awesome characters and written music for our games such as [THRESHOLD](/threshold), Benry & Krimpst, Super Cool Fighters, HOBO HORROR 2 (we don't talk about the first one), and others that we never finished!
 
 I am also in a band with Luke called <span class="wave" style="font-family: 'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive; font-weight: bold;">ANOTHER BANGER!</span>
 
